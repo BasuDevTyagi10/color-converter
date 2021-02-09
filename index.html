@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Color Companion</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="/" class="headerTxt">Color Companion</a></li>
+        </ul>
+    </header>
+    <div class="centerDiv">
+        <p>Online Color Code Converter!</p>
+        <label for="rgb">RGB</label>
+        <table id="rgb" style="margin-top: 20px;">
+            <tr>
+                <th>Red</th>
+                <th>Green</th>
+                <th>Blue</th>
+            </tr>
+            <tr>
+                <td><input type="range" min="0" max="255" value="255" id="r" onchange="RGBtoHEXnHSL()"></td>
+                <td><input type="range" min="0" max="255" value="255" id="g" onchange="RGBtoHEXnHSL()"></td>
+                <td><input type="range" min="0" max="255" value="255" id="b" onchange="RGBtoHEXnHSL()"></td>
+            </tr>
+            <tr>
+                <td id="r-label">255</td>
+                <td id="g-label">255</td>
+                <td id="b-label">255</td>
+            </tr>
+        </table>
+        <label for="hex">HEX</label>
+        <input type="text" id="hex" placeholder="#ffffff" onchange="HEXtoRGBnHSL()">
+        <label for="hsl"><br>HSL</label>
+        <input type="text" id="hsl" placeholder="(0,100%,100%)" onchange="HSLtoRGBnHEX()">
+    </div>
+    <footer>
+        <div class="container">
+            <p>built by <a href="https://github.com/BasuDevTyagi10">Basudev Tyagi</a>.</p>
+        </div>
+    </footer>
+    <script src="/script.js"></script>
+</body>
+</html>
+
+</html>

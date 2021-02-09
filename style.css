@@ -1,0 +1,109 @@
+:root{
+    --text-color : #181818;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: 'FCBasicFont';
+    src: url(fonts/FCBasicFont.ttf);
+}
+
+body{
+    font: 200 20px 'FCBasicFont','Eras ITC',sans-serif;
+    color: var(--text-color);
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    display: block;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.headerTxt{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+a:hover{
+    cursor: pointer;
+}
+.activePage{
+    text-decoration: underline;
+}
+
+.centerDiv{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.centerDiv p{
+    text-decoration: underline;
+    letter-spacing: 2px;
+    margin: 20px 0px;
+    font-size: 30px;
+}
+
+th,td{
+    margin: 10px;
+    padding: 10px;
+}
+
+label{
+    text-decoration: underline;
+}
+input[type="range"]{
+    width: 200px;
+    height: 50px;
+}
+
+input[type="text"]{
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 335px;
+    font-size: 30px;
+    font-family: inherit;
+    line-height: 44px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+    padding: 5px 0;
+    border-radius: 0;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+input[type="text"]:focus{
+    outline: none;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.4);
+}
+
+footer{
+    font: 100 16px 'Cambria';
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
